@@ -21,10 +21,11 @@ const addNewElement = () => {
   el.id = `element-${numberOfChildrens++}`;
   el.innerHTML = `<div class="element">
     <p>${inputFieldValue}</p>
-    <a href="#" className="element-edit">Edit</a>
-    <a href="#" className="element-delete">Delete</a>
+    <a href="#" class="element-edit">Edit</a>
+    <a href="#" class="element-delete" onclick='deleteItem(e)'>Delete</a>
     </div>`;
   // add newly created node to "ul"
   unorderedList.appendChild(el);
   inputField.value = ""; // reset value of inputfield
 };
+// create delete function
