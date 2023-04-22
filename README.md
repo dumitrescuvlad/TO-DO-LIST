@@ -1,2 +1,2 @@
-# TO-DO-LIST
-To Do List - Javascript, Css, Html
+# TO DO LIST APP
+To Do List app made using Javascript, Css, Html.
