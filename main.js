@@ -22,10 +22,17 @@ const addNewElement = () => {
   el.innerHTML = `<div class="element">
     <p>${inputFieldValue}</p>
     <a href="#" class="element-edit">Edit</a>
-    <a href="#" class="element-delete" onclick='deleteItem(e)'>Delete</a>
+    <a href="#" class="element-delete">Delete</a>
     </div>`;
   // add newly created node to "ul"
   unorderedList.appendChild(el);
   inputField.value = ""; // reset value of inputfield
+
+  //   delete functionality
+  el.addEventListener('click', () =>{
+    unorderedList.removeChild(el)
+  })
+
 };
-// create delete function
+
+ 
